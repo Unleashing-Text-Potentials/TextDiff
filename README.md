@@ -45,4 +45,5 @@ horovodrun -np $NUM_GPUS python src/tasks/run_video_retrieval.py \
 `$CONFIG_PATH` should be set to one of the .json config files available at [src/configs](src/configs) postfixed with `_retrieval.json`. For example, you can use `src/configs/msrvtt_retrieval/msrvtt_retrieval_vip_base_32.json` on MSRVTT retrieval. For model, currently, `pretrain_vip_base_32.json` and `pretrain_vip_base_16.json` are supported. For dataset, MSR-VTT, DiDemo, LSMDC, ActivityNet Captions are supported.
 
 ## Acknowledgements
-The code is based on [CLIP-VIP]([XPretrain/CLIP-ViP at main · microsoft/XPretrain](https://github.com/microsoft/XPretrain/tree/main/CLIP-ViP)).
+The code is based on [CLIP-VIP](https://github.com/microsoft/XPretrain/tree/main/CLIP-ViP).
+
