@@ -14,9 +14,9 @@ We use a Docker image for easier reproduction: `tiankaihang/azureml_docker:horov
 
    CLIP-ViP-B/16: [Azure Blob Link](https://hdvila.blob.core.windows.net/dataset/pretrain_clipvip_base_16.pt?sp=r&st=2023-03-16T05:02:05Z&se=2026-07-31T13:02:05Z&spr=https&sv=2021-12-02&sr=b&sig=XNd7fZSsUhW7eesL3hTfYUMiAvCCN3Bys2TadXlWzFU%3D), Save to: `/blob_mount/path/to/CLIP-ViP-B/16/checkpoint`
 
-2. We trained models on the MSR-VTT, DiDeMo , Activitynet and LSMDC datasets. To download the datasets, refer to this [repository](https://github.com/ArrowLuo/CLIP4Clip), and configure the absolute dataset path in `launch_textdiff.sh`.
+2. We trained models on the MSR-VTT, DiDeMo , Activitynet and LSMDC datasets.  To download the datasets, refer to this [repository](https://github.com/ArrowLuo/CLIP4Clip), and configure the absolute dataset path in `launch_textdiff.sh`.
 
-3. Download  generate feature [Download](https://drive.google.com/drive/folders/1vCfRlMCB5QgzliqC5eocUxj1BDJpkZdW?usp=sharing). Edit `launch_textdiff.sh` to replace the default `feature_path` value with your absolute download path.
+3. Download  generate feature: MSR-VTT: [download](https://drive.google.com/uc?export=download&id=1dojF8S4TqY62GM4ORBer7VNtoUpQzePX) ; DiDeMo; [download](https://drive.google.com/uc?export=download&id=11pHEGevheC7Uo5ddN9ub6a9kP2t_AKvV); Activitynet: [download](https://drive.google.com/uc?export=download&id=1_EjFJ-SsxrJ9SpNavSq3zYB76xOylqI6) LSMDC : [download](https://drive.google.com/uc?export=download&id=1nI5FV4GGJ-GC8mL9ExxTeDKKLfJBbePU) .Edit `launch_textdiff.sh` to replace the default `feature_path` value with your absolute download path.
 
 4. Set up the environment for running the experiments.
 
