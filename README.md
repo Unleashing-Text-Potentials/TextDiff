@@ -44,6 +44,16 @@ horovodrun -np $NUM_GPUS python src/tasks/run_video_retrieval.py \
 
 `$CONFIG_PATH` should be set to one of the .json config files available at [src/configs](src/configs) postfixed with `_retrieval.json`. For example, you can use `src/configs/msrvtt_retrieval/msrvtt_retrieval_vip_base_32.json` on MSRVTT retrieval. For model, currently, `pretrain_vip_base_32.json` and `pretrain_vip_base_16.json` are supported. For dataset, MSR-VTT, DiDemo, LSMDC, ActivityNet Captions are supported.
 
+### Model Zoo & Reproduction
+
+We provide the checkpoints fine-tuned on the 4 downstream datasets (MSR-VTT, DiDeMo, ActivityNet, and LSMDC) to facilitate the reproduction of our results.
+
+| Dataset | Backbone | Checkpoint                 |
+| :--- | :--- |:---------------------------|
+| MSR-VTT | CLIP-ViP-B/32 | [Download](https://drive.google.com/file/d/1flHCCLNpDfWGkK0aqLwKPrjaCzwq3nvV/view?usp=drive_link) |
+| DiDeMo | CLIP-ViP-B/32 | [Download](https://drive.google.com/file/d/1f-wOT8kRZ5q4tEBu46HzfPZ1T3i1CozK/view?usp=drive_link) |
+| ActivityNet | CLIP-ViP-B/32 | [Download](https://drive.google.com/file/d/1sMIftUf6JjQe4N9kVTbm9oTZJ0V448VU/view?usp=drive_link) |
+| LSMDC | CLIP-ViP-B/32 | [Download](https://drive.google.com/file/d/1EMgf4h3W7S4ucrlh4WxTDvGC9IntvYDS/view?usp=drive_link)               |
 ## Acknowledgements
 The code is based on [CLIP-VIP](https://github.com/microsoft/XPretrain/tree/main/CLIP-ViP).
 
